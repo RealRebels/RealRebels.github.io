@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>BAG REBELS</title>
+
+<link href="rebel.css" rel="stylesheet">
+
+<script src="rebel.js" defer></script>
+
+<script>
+    function downloadFile() {
+      const music = new Audio();
+      music.src = "./beats.mp3";
+      music.play();  
+      const url = "./bags.jpg";
+      const filename = "bags.jpg";
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = filename;
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+    </script>
+    
+<style>
+    
+#website{
+    
+    display: block;
+    width: 100px;
+    height: 100px;
+    padding: 10px 10px 10px 10px;
+}
+    
+</style>    
+
+</head>
+
+<body>
+
+<div id="container">
+
+<h1 id="header">ALL BAGS ARE EQUAL</h1>
+
+<h2 id="sub-header" onclick="bagThis()";>"BAG DIS!!!"</h2>
+
+<p id="listen">Hear Our Leader Give His Thanks</p>
+
+<h4 id="below">Press The Picture Below!!!</h4>
+
+<img src="bags.jpg" onclick="bootleg()"; id="baggg">
+
+<br>
+
+<br>
+
+<button id="no" onclick="returner()";>I WILL NOT STAND FOR THIS</button>
+
+<button id="no" onclick="downloadFile()";>DOWNLOAD YOUR SIGN</button>
+    
+<a id="website" href="https://arbys.com"></a>
+
+</div>
+
+
+</body>
+
+</html>
